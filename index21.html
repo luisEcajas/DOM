@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rastro del Mouse</title>
+    <style>
+        body {
+            background-color: #111; /* Fondo oscuro para resaltar la estela */
+            overflow: hidden;       /* Evita barras de scroll por el movimiento */
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilo para que los divs se conviertan en círculos flotantes */
+        .punto-rastro {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #00ffcc;
+            pointer-events: none; /* Crucial para que no bloquee los clics */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="punto1" class="punro-rastro"></div>
+    <div id="punto2" class="punto-rastro"></div>
+    <div id="punto3" class="punto-rastro"></div>
+
+    <script src="ejercicio21.js"></script>
+</body>
+</html>

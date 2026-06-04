@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Furry Forest Friends</title>
+    <style>
+        .galeria {
+            position: relative;
+            height: 400px;
+            margin-top: 20px;
+        }
+        /* Todas las imágenes se superponen usando posicionamiento absoluto */
+        .tarjeta-animal {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid #fff;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease; /* Suaviza la interacción */
+        }
+        
+        /* Desplazamiento en cascada inicial */
+        #animal1 { top: 10px;  left: 10px;  z-index: 1; }
+        #animal2 { top: 40px;  left: 70px;  z-index: 2; }
+        #animal3 { top: 80px;  left: 140px; z-index: 3; }
+    </style>
+</head>
+<body>
+
+    <h2>Furry Forest Friends</h2>
+    
+    <div class="galeria">
+        <img id="animal1" class="tarjeta-animal" src="img/img33.jpg" alt="Tigre">
+        <img id="animal2" class="tarjeta-animal" src="img/img44.jpg" alt="Lémur">
+        <img id="animal3" class="tarjeta-animal" src="img/img33.jpg" alt="Panda Rojo">
+    </div>
+
+    <script src="ejercicio16.js"></script>
+</body>
+</html>

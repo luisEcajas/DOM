@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Residence Hall Blog Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        /* Contenedor principal de comentarios publicados */
+        .tablero {
+            width: 500px;
+            height: 200px;
+            border: 1px solid #a5c3de;
+            background-color: #f4f8fb;
+            padding: 10px;
+            overflow-y: auto; /* Permite scroll vertical si hay muchos comentarios */
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        /* Estilo para cada bloque de comentario individual */
+        .comentario-item {
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .formulario-comentario {
+            width: 520px;
+        }
+        textarea {
+            width: 350px;
+            height: 60px;
+            display: block;
+            margin-top: 5px;
+        }
+        .control-grupo {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Park University Residence Hall Blog Board</h2>
+
+    <div id="tableroComentarios" class="tablero"></div>
+
+    <div class="formulario-comentario">
+        <div class="control-grupo">
+            <label for="selectResidencia">Select a dorm:</label><br>
+            <select id="selectResidencia">
+                <option value="Copley Quad">Cuádruple Copley</option>
+                <option value="Chesnut Hall">Salón de castañas</option>
+            </select>
+        </div>
+
+        <div class="control-grupo">
+            <label for="txtComentario">Your comment:</label>
+            <textarea id="txtComentario"></textarea>
+        </div>
+        
+        <br><br>
+        <button id="btnAnadir">Add</button>
+    </div>
+
+    <script src="ejercicio22.js"></script>
+</body>
+</html>

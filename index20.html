@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación de Correo</title>
+    <style>
+        .formulario {
+            margin: 50px;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Estilos base para el input */
+        .campo-email {
+            font-size: 24px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            border: 2px solid #ccc;
+            outline: none;
+            width: 400px;
+            transition: border-color 0.2s ease;
+        }
+
+        /* Clase para estado incorrecto (Borde rojo) */
+        .input-error {
+            border-color: #ff6b6b;
+        }
+
+        /* Clase para estado correcto (Borde azul) */
+        .input-valido {
+            border-color: #3498db;
+        }
+
+        /* Texto de error */
+        .texto-error {
+            color: #ff6b6b;
+            font-size: 20px;
+            margin-top: 8px;
+            display: none; /* Oculto por defecto */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="formulario">
+        <input type="text" id="emailField" class="campo-email" placeholder="Introduce tu correo">
+        <div id="errorMessage" class="texto-error">Correo incorrecto</div>
+    </div>
+
+    <script src="ejercicio20.js"></script>
+</body>
+</html>

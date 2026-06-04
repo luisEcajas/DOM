@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mover Cuadro en la Pantalla</title>
+    <style>
+        /* Contenedor que delimita el ancho del movimiento */
+        .escenario {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            background-color: #f0f0f0;
+            border: 2px dashed #ccc;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        /* Cuadro con su estado inicial a la izquierda */
+        .cuadro {
+            position: absolute;
+            top: 25px;
+            left: 0px; /* Inicia pegado a la izquierda */
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            /* Transición CSS para que el movimiento sea fluido y no un salto brusco */
+            transition: left 1s ease-in-out; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Animación del DOM: Desplazar Elemento</h2>
+    <button id="btnMover">Mover a la derecha</button>
+    <button id="btnReset">Reiniciar</button>
+
+    <div class="escenario">
+        <div id="miCuadro" class="cuadro"></div>
+    </div>
+
+    <script src="ejercicio18.js"></script>
+</body>
+</html>
